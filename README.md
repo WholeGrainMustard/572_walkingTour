@@ -1,3 +1,6 @@
+# See the original first
+This project is built upon work done by <a href="https://github.com/cartobaldrica/">@cartobaldrica</a>. Check out their work here: https://github.com/cartobaldrica/web-walking-tour.
+
 # Web Walking Tour
 This library provides a framework for the creation and implementation of a map-based guided tour, delivered through a browser. The library was created as a teaching tool for an advanced cartography course at the University of Wisconsin-Madison, for students with little to no programming experience, and beginner HTML/CSS skills. As such, this framework is designed to help develop graphic design skills through HTML/CSS (without touching JS). On a theoretical level, the creation of map-based guided tour allows students to explore the relationship between _maps_ and places that are _mapped_. 
 
