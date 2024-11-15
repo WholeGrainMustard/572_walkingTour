@@ -15,6 +15,17 @@
     document.querySelector(".about").addEventListener("click",function(){
         splashModal.show();
     })
+
+    // Sources Button
+    let source = document.getElementById('source-modal'),
+        sourceModal = new bootstrap.Modal(source);
+    
+    //add listener for the about button
+    document.querySelector(".sources").addEventListener("click",function(){
+        sourceModal.show();
+    })
+
+
     //modal variables for stops
     let stop = document.getElementById('stop-modal'),
         stopModal = new bootstrap.Modal(stop);

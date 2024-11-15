@@ -38,7 +38,35 @@
                 </div>
             </div>
         </div>    
-
+        <!--Source Splash Screen.-->
+        <div class="modal" id="source-modal">
+          <div class="modal-dialog" id="splash-dialogue">
+              <div class="modal-content" id="splash-content">
+                  <div class="modal-header">
+                      <div class="col-md-10 offset-md-1 col-sm-12 col-12" id="splash-title-container">
+                      </div>
+                  </div>
+                  <div class="modal-body col-md-10 offset-md-1 col-sm-12 col-12" id="splash-body">                       
+                      <!--Source Menu title-->
+                      <h1 id="splash-title" class="modal-title">Sources</h1>
+                      <!--Table of sources and links-->
+                      <table style="width:80%; padding-left:10%">
+                        <tr>
+                          <td>Alfreds Futterkiste</td>
+                          <td>Maria Anders</td>
+                        </tr>
+                        <tr>
+                          <td>Centro comercial Moctezuma</td>
+                          <td>Francisco Chang</td>
+                        </tr>
+                      </table>
+                      <br>
+                      <!--Button to start the tour.-->
+                      <button type="button" id="start" class="btn btn-secondary" data-bs-dismiss="modal">Return to Tour</button>
+                  </div>
+              </div>
+          </div>
+      </div>   
         <!--Navigation bar-->
         <nav class="tour-navbar navbar navbar-expand-lg">
           <div class="container-fluid">
@@ -60,6 +88,10 @@
                     All Stops
                   </a>
                   <ul class="dropdown-menu"></ul>
+                </li>
+              <!--Sources-->
+                <li class="nav-item">
+                  <a class="nav-link sources" aria-current="page" href="#">Sources</a>
                 </li>
               </ul>
             </div>
