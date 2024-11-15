@@ -50,12 +50,12 @@ button:hover {
 
 /*STOP STYLING*/
 .active-stop {
-    fill: white;
+    fill: #005500;
     stroke: black;
 }
 
 .inactive-stop {
-    fill: gray;
+    fill: #00bb00;
     stroke: black;
 
 }
