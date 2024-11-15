@@ -62,11 +62,11 @@ button:hover {
 
 /*ROUTE STYLING*/
 .active-route {
-    stroke: #00bb00;
+    stroke: #005500;
 }
 
 .inactive-route {
-    stroke: #005500;
+    stroke: #00bb00;
 }
 
 /*NAVIGATION BAR*/
