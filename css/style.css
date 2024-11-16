@@ -14,9 +14,10 @@ body,
 .leaflet-popup-content {
     font-family: "Quicksand", sans-serif !important;
 }
-/* */
+
+/*Table Style*/
 table {
-    width: 10%
+    width: 100%
 }
 
 /*BUTTON STYLING*/
