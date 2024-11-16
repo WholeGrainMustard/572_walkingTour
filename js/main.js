@@ -5,7 +5,7 @@
 //create layout for popup at each stop (less important)
 
 (function () {
-    let map, route, stops, mapCenter, currentStop = 1, tourLength = 0, active = false, played = [], firstLocate = true, locationMarker, circle;
+    let map, route, stops, parcel, mapCenter, currentStop = 1, tourLength = 0, active = false, played = [], firstLocate = true, locationMarker, circle;
     //splash screen modal variables
     let splash = document.getElementById('splash-modal'),
         splashModal = new bootstrap.Modal(splash);
@@ -43,6 +43,7 @@
             }
             updateStopColor();
             updateRouteColor();
+            updateParcelColor();
         })
     })
     //create map
@@ -68,6 +69,7 @@
         document.querySelector(".location-button").addEventListener("click", getLocation)
         //add stop data
         addRoute();
+        addParcels();
         addStops();
     }
     //get location function
@@ -124,6 +126,41 @@
                 updateRouteColor();
             })
     }
+
+        //add Parcels to the map
+    function addParcels() {
+        fetch("assets/parcels.geojson")
+            .then(res => res.json())
+            .then(data => {
+                parcel = L.geoJson(data, {
+                    style: function (feature) {
+                        return {
+                            className: "parcel-" + feature.properties.id,
+                            weight: 10
+                        }
+                    }
+                }).addTo(map)
+                updateParcelColor();
+            })
+    }
+    
+    //set Parcel color
+    function parcelClass(props) {
+        let elem = document.querySelector(".parcel-" + props.id);
+        elem.classList.remove("inactive-parcel")
+        console.log(props.id,currentStop,props.vis)
+        if (Number(props.vis) < currentStop)
+            elem.classList.add("active-parcel")
+        else
+            elem.classList.add("inactive-parcel")
+    }
+    //update Parcel color
+    function updateParcelColor() {
+        parcel.eachLayer(function (layer) {
+            parcelClass(layer.feature.properties)
+        })
+    }
+
     //set route color
     function routeClass(props) {
         let elem = document.querySelector(".route-" + props.id);
@@ -140,6 +177,7 @@
             routeClass(layer.feature.properties)
         })
     }
+
     //add tour stops to map
     function addStops() {
         fetch("assets/stops.csv")

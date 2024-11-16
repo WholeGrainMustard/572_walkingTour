@@ -74,6 +74,17 @@ button:hover {
     stroke: #00bb00;
 }
 
+/*Parcel Styling*/
+.active-parcel {
+    stroke: #3366ff;
+    fill: #2222ff;
+}
+
+.inactive-parcel {
+    stroke: #0022aa00;
+    fill: #00000000;
+}
+
 /*NAVIGATION BAR*/
 .tour-navbar,
 .dropdown-menu {
