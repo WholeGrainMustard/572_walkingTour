@@ -148,8 +148,8 @@
     function parcelClass(props) {
         let elem = document.querySelector(".parcel-" + props.id);
         elem.classList.remove("inactive-parcel")
-        console.log(props.id,currentStop,props.vis)
-        if (Number(props.vis) < currentStop)
+        console.log(props.id,props.vis,currentStop)
+        if (Number(props.vis) == currentStop||Number(props.vis) == currentStop+1)
             elem.classList.add("active-parcel")
         else
             elem.classList.add("inactive-parcel")
