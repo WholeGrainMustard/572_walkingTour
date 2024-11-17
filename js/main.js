@@ -154,6 +154,7 @@
         else
             elem.classList.add("inactive-parcel")
     }
+    
     //update Parcel color
     function updateParcelColor() {
         parcel.eachLayer(function (layer) {
