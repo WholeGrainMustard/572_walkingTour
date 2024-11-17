@@ -20,6 +20,11 @@ table {
     width: 100%
 }
 
+ /*Table Cell Style*/
+td {
+    vertical-align: text-top;
+}
+
 /*BUTTON STYLING*/
 /*Color and border design for all buttons*/
 button {
