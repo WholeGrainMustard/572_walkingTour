@@ -127,7 +127,7 @@
             })
     }
 
-        //add Parcels to the map
+    //add Parcels to the map
     function addParcels() {
         fetch("assets/parcels.geojson")
             .then(res => res.json())
