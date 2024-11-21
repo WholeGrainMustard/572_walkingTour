@@ -308,6 +308,7 @@
         }
         //add audio button if audio exists
         if (props.audio) {
+            console.log(props.id)
             let button = "<button id='play-audio'>Play Audio</button>";
             document.querySelector("#title-container").insertAdjacentHTML("beforeend", button)
             document.querySelector("#play-audio").addEventListener("click", function () {
