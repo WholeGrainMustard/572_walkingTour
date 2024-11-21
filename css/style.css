@@ -9,10 +9,12 @@ body {
 }
 
 /*FONT LOADING*/
-/*Update with selected Google Font*/
 body,
 .leaflet-popup-content {
-    font-family: "Quicksand", sans-serif !important;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*Table Style*/
