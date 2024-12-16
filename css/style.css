@@ -40,6 +40,10 @@ button:hover {
     background: rgba(240, 240, 240, 1);
 }
 
+.source {
+    padding-bottom: 8px;
+}
+
 /*MAP INTERFACE*/
 /*MAP*/
 #map {
