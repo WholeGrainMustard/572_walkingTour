@@ -22,7 +22,7 @@ table {
     width: 100%
 }
 
- /*Table Cell Style*/
+/*Table Cell Style*/
 td {
     vertical-align: text-top;
 }
@@ -32,7 +32,8 @@ td {
 button {
     border: 2px black solid;
     background: rgba(255, 255, 255, 1);
-    font-size: 14pt !important;
+    font-size: 18pt !important;
+    float: none
 }
 
 button:hover {
