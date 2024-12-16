@@ -143,18 +143,18 @@
                 updateParcelColor();
             })
     }
-    
+
     //set Parcel color
     function parcelClass(props) {
         let elem = document.querySelector(".parcel-" + props.id);
         elem.classList.remove("inactive-parcel")
         //console.log(props.id,props.vis,currentStop,currentStop-1)
-        if (Number(props.vis) == currentStop || Number(props.vis) == currentStop-1)
+        if (Number(props.vis) == currentStop || Number(props.vis) == currentStop - 1)
             elem.classList.add("active-parcel")
         else
             elem.classList.add("inactive-parcel")
     }
-    
+
     //update Parcel color
     function updateParcelColor() {
         parcel.eachLayer(function (layer) {
@@ -320,7 +320,7 @@
         }
         //add image if image exists
         if (props.image) {
-            let img = "<img src='img/" + props.image + "' id='stop-img'>"
+            let img = "<img src='img/" + props.image + "' alt='" + props.alt + "' id='stop-img'>"
             document.querySelector("#stop-body").insertAdjacentHTML("beforeend", img)
         }
         //add body text if body text exists
